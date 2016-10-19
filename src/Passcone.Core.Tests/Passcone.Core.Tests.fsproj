@@ -37,7 +37,7 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="../../Passcone.Core/Passcone.Core/Passcone.Core.fsproj">
+    <ProjectReference Include="../Passcone.Core/Passcone.Core.fsproj">
       <Name>Passcone.Core.fsproj</Name>
       <Project>{2157fbb6-5bc8-4130-b6ab-e8ad27632d39}</Project>
     </ProjectReference>
