@@ -4,3 +4,4 @@ nuget FSharp.Core
 nuget FsUnit
 nuget NUnit 2.6.4
 nuget NUnit.Runners 2.6.4
+nuget Chessie
