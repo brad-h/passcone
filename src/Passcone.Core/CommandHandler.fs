@@ -10,6 +10,13 @@ let handleRequestLocation location = function
 | FreedSpace _ ->
   [LocationRequested location]
   |> ok
+| SearchingNearLocation locattion ->
+  [LocationRequested location]
+  |> ok
+| SelectedLot _ ->
+  CannotSearchWhenLotSelected |> fail
+| SelectedSpace _ ->
+  CannotSearchWhenSpaceSelected |> fail
 | _ -> NotImplemented |> fail
 
 let execute (state:State) command =

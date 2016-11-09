@@ -11,4 +11,5 @@ type State =
 let apply state event =
   match state, event with
   | FreedSpace _, LocationRequested location -> SearchingNearLocation location
+  | SearchingNearLocation _, LocationRequested location -> SearchingNearLocation location
   | _, _ -> state 
